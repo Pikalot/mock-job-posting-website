@@ -24,6 +24,26 @@ JOBS = [
     'title': 'Accountant',
     'location': 'Williamston, Michigan',
     'salary': '$65,000.00'
+  },
+  {
+    'id': 4,
+    'category': 'Administrative assistant',
+    'title': 'Receptionist',
+    'location': 'Williamston, Michigan',
+    'salary': '$35,000.00'
+  },
+  {
+    'id': 5,
+    'category': 'Healthcare',
+    'title': 'Site Inspector',
+    'location': 'Williamston, Michigan',
+    'salary': '$55,000.00'
+  },
+  {
+    'id': 4,
+    'category': 'Healthcare',
+    'title': 'Operator',
+    'location': 'Remotedly'
   }
 ]
 
