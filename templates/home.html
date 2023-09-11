@@ -18,29 +18,22 @@
   </head>
   <body>
     <div class = "container">
-    <h1 class = "text-center mt-3 mb-4">Careers at City of Williamston, Michigan </h1>
-    <img class = "img-fluid" id = "banner" src = "https://mock-job-posting-website-1--pikalot.repl.co/static/banner.gif" width = "1280">
-    <h2>
-      About City of Williamston, Michigan
-    </h2>
-    <p class = "lead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Bé Ba vẫn mập địt
-    </p>
-    <h2>Open positions</h2>
-    <p>
-      {% for job in jobs %}
-        {% include 'joblist.html' %}
-      {% endfor %}
-    </p>
-      <div style = "text-align:center;">
-         <a href="#" class="btn" role="button" data-bs-toggle="button">Contact Us</a>
-      </div>
-        <p class = "mt-4 mb-2">
-          Copyright 2023 by Pikalot 
-          <a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">| Privacy Statement </a>
-          <a href="#" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">| Terms Of Use </a>
-        </p>
-
+      <h1 class = "text-center mt-3 mb-4">Careers at {{company_name}} </h1>
+      <img class = "img-fluid" id = "banner" src = "https://mock-job-posting-website-1--pikalot.repl.co/static/banner.gif" width = "1280">
+      <h2>About {{company_name}}</h2>
+      <p class = "lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Bé Ba vẫn mập địt
+      </p>
+      <h2>Open positions</h2>
+      <p>
+        {% for job in jobs %}
+          {% include 'joblist.html' %}
+        {% endfor %}
+      </p>
+      <p class = "mt-4 mb-2">Copyright 2023 by {{company_name}} 
+        <a href="http://new.williamston-mi.us/privacy.aspx" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">| Privacy Statement </a>
+        <a href="http://new.williamston-mi.us/terms.aspx" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">| Terms Of Use </a>
+        <a href="http://new.williamston-mi.us/VisitUs.aspx" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">| Visit Us </a>
+      </p>
     </div>
   </body>
 </html>
